@@ -4,7 +4,7 @@ const { src, dest, watch, parallel } = require("gulp");
 const sass = require("gulp-sass")(require('sass'));
 const plumber = require('gulp-plumber');
 
-//Imagenes
+// Imagenes
 const cache = require('gulp-cache');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
@@ -19,15 +19,14 @@ function css(done){
     done();
 }
 
-function imagenes(done){
+function imagenes(done) {
     const opciones = {
         optimizationLevel: 3
     }
     src('src/img/**/*.{png,jpg}')
-        .pipe(cache(imagemin(opciones)))
-        .pipe(dest('build/img'))
-
-    done()
+        .pipe( cache( imagemin(opciones) ) )
+        .pipe( dest('build/img') )
+    done();
 }
 
 function versionWebp( done ) {
@@ -60,4 +59,4 @@ exports.css = css;
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
-exports.dev = parallel(imagenes, versionWebp,versionAvif, dev);
+exports.dev = parallel( imagenes, versionWebp, versionAvif, dev) ;

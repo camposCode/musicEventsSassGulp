@@ -27,7 +27,7 @@
         <div class="overlay">
             <div class="contenedor contenido-video">
                 <h2>Rock & EDM Festival</h2>
-                <p>Julio 2023, Atenas</p>
+                <p>Julio 2023, Madrid</p>
             </div>
         </div>
         <video 
@@ -49,15 +49,112 @@
 
     <section class="contenedor sobre-festival">
         <div class="imagen">
-            <img src="img/imagen_vocalista.jpg" alt="imagen vocalista festival">
+            <picture>
+                <source srcset = "build/img/imagen_vocalista.avif" type="image/avif">
+                <source srcset = "build/img/imagen_vocalista.webp" type="image/webp">
+                <img 
+                    loading="lazy"
+                    width="200" 
+                    height="300" 
+                    src="build/img/imagen_vocalista.jpg" alt="imagen vocalista">
+            </picture>
         </div>
         <div class="contenido-festival">
             <h2>Rock & EDM Festival</h2>
             <p class="fecha">Julio 2023, Atenas</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, officiis quidem. Et, nulla corrupti autem, nostrum quas id harum laboriosam delectus exercitationem quae amet minima neque quia consequatur eveniet tempore!</p>
         </div>
-
+    </section>
+    <section class="lineup">
+        <h3>Line Up</h3>
+        <p class="dia">Viernes 21</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-amarillo">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Metallica</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Pearl Jam</span>
+                    </li>
+                    <li>
+                        20:00 | <span>KoRn</span>
+                    </li>
+                    <li>
+                        18:00 | <span>In this Moment</span>
+                    </li>
+                    <li>
+                        16:00 | <span>Limp Bizkit</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-verde">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Parris</span>
+                    </li>
+                    <li>
+                        22:00 | <span>India Jordan</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Himera</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Nia Archives</span>
+                    </li>
+                    <li>
+                        16:00 | <span>Black Cadmium</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="dia">Sabado 22</p>
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario rock bg-verde">
+                <p class="nombre-escenario">Escenario Rock</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Scorpions</span>
+                    </li>
+                    <li>
+                        22:00 | <span>U2</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Radiohead</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Alice in Chains</span>
+                    </li>
+                    <li>
+                        16:00 | <span>System of a down</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="escenario edm bg-amarillo">
+                <p class="nombre-escenario">Escenario EDM</p>
+                <ul class="calendario">
+                    <li>
+                        24:00 | <span>Van Dyk</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Above & Beyond</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Eric Prdyz</span>
+                    </li>
+                    <li>
+                        16:00 | <span>Vini Vici</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 </body>
 </html>
+
         
