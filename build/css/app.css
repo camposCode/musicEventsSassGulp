@@ -592,3 +592,70 @@ img {
   display: block;
   max-width: 90rem;
 }
+
+.btn-cerrar {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #eee;
+  color: #000;
+  display: grid;
+  place-items: center;
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  cursor: pointer;
+}
+
+.boletos {
+  padding: 5rem 0;
+}
+.boletos h3 {
+  text-align: center;
+  color: #eee;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .boletos .contenedor-boletos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pase .nombre-pase {
+  text-align: center;
+  color: #eee;
+  font-size: 2.5rem;
+}
+.pase-header p, .pase-footer p {
+  text-align: center;
+  color: #eee;
+  padding: 0.5rem;
+  margin: 0;
+  background-color: #355C7D;
+}
+.pase-header p {
+  text-transform: uppercase;
+  font-size: 2.1rem;
+}
+.pase-body {
+  background-color: #eee;
+}
+.pase-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pase-body ul li,
+.pase-body ul :nth-child(odd) {
+  background-color: #eee;
+  padding: 1rem;
+  border-bottom: 1px solid #355C7D;
+}
+.pase-footer {
+  opacity: 85%;
+}
+.pase-footer p {
+  font-size: 2.4rem;
+}
