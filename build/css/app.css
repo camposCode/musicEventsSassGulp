@@ -303,6 +303,12 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
 }
+body.fijar-body {
+  overflow: hidden;
+}
+body.body-scroll {
+  padding-top: 8.6rem;
+}
 
 p {
   font-size: 2rem;
@@ -632,6 +638,7 @@ img {
 }
 .boletos .contenedor-boletos li {
   background-color: #BEBDB8;
+  color: #eee;
 }
 .boletos .contenedor-boletos li:nth-child(odd) {
   background-color: #6b6e71;

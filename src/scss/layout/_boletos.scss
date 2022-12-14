@@ -20,6 +20,7 @@
 
         li{
             background-color: v.$smoke;
+            color: v.$blanco;
         }
         li:nth-child(odd){
             background-color: darken(v.$steel, 5%)
