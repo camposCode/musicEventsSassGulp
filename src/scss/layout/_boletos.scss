@@ -4,6 +4,7 @@
 .boletos {
 
     padding: 5rem 0;
+    background-color: v.$iron;
     
     h3 {
         text-align: center;
@@ -15,6 +16,13 @@
 
         @include m.tablet {
             @include m.grid(2, 5rem);
+        }
+
+        li{
+            background-color: v.$smoke;
+        }
+        li:nth-child(odd){
+            background-color: darken(v.$steel, 5%)
         }
     }
 }
@@ -34,7 +42,7 @@
             color: v.$blanco;
             padding: .5rem;
             margin: 0;
-            background-color: v.$azul;
+            background-color: v.$iron;
         }
     }
 
@@ -46,7 +54,7 @@
     }
 
     &-body{
-        background-color: v.$blanco;
+        background-color: v.$charcoal;
 
         ul{
             @include m.resetear-lista;
@@ -55,7 +63,7 @@
             :nth-child(odd){
                 background-color: v.$blanco;
                 padding: 1rem;
-                border-bottom: 1px solid v.$azul;
+                border-bottom: 1px solid v.$iron;
             }
         }
     }

@@ -344,7 +344,14 @@ img {
 }
 
 .header {
-  background-color: #94bc8c;
+  background-color: #48494B;
+}
+@media (min-width: 768px) {
+  .header.fijo {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0.3rem 0.3rem 0.3rem #333;
+  }
 }
 @media (min-width: 768px) {
   .header.fijo {
@@ -467,7 +474,7 @@ img {
 }
 
 .lineup {
-  background-color: #C06C84;
+  background-color: #222021;
   padding: 5rem 0;
 }
 .lineup h3, .lineup p {
@@ -609,6 +616,7 @@ img {
 
 .boletos {
   padding: 5rem 0;
+  background-color: #48494B;
 }
 .boletos h3 {
   text-align: center;
@@ -622,6 +630,12 @@ img {
     gap: 5rem;
   }
 }
+.boletos .contenedor-boletos li {
+  background-color: #BEBDB8;
+}
+.boletos .contenedor-boletos li:nth-child(odd) {
+  background-color: #6b6e71;
+}
 
 .pase .nombre-pase {
   text-align: center;
@@ -633,14 +647,14 @@ img {
   color: #eee;
   padding: 0.5rem;
   margin: 0;
-  background-color: #355C7D;
+  background-color: #48494B;
 }
 .pase-header p {
   text-transform: uppercase;
   font-size: 2.1rem;
 }
 .pase-body {
-  background-color: #eee;
+  background-color: #222021;
 }
 .pase-body ul {
   margin: 0;
@@ -651,7 +665,7 @@ img {
 .pase-body ul :nth-child(odd) {
   background-color: #eee;
   padding: 1rem;
-  border-bottom: 1px solid #355C7D;
+  border-bottom: 1px solid #48494B;
 }
 .pase-footer {
   opacity: 85%;
@@ -661,7 +675,7 @@ img {
 }
 
 .site-footer {
-  background-color: #bcd5b7;
+  background-color: #48494B;
   padding: 1rem;
 }
 .site-footer p {
